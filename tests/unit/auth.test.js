@@ -1,11 +1,11 @@
 /* eslint-disable arrow-body-style */
-const request = require('supertest')
-const httpStatus = require('http-status')
-const { expect } = require('chai')
-const sinon = require('sinon')
-const app = require('../../app')
+const request = require('supertest');
+const httpStatus = require('http-status');
+const { expect } = require('chai');
+const sinon = require('sinon');
+const app = require('../../app');
 
-const sandbox = sinon.createSandbox()
+const sandbox = sinon.createSandbox();
 
 describe('Authentication API', () => {
 
@@ -19,7 +19,7 @@ describe('Authentication API', () => {
         .expect(httpStatus.OK)
         .then(res => {
           
-        })
-    })
-  })
-})
+        });
+    });
+  });
+});

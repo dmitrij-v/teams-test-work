@@ -8,7 +8,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      email: { type: Sequelize.STRING(MAX_EMAIL_LENGTH) },
+      email: {
+        type: Sequelize.STRING(MAX_EMAIL_LENGTH),
+        unique: true
+      },
       googleId: { type: Sequelize.STRING(MAX_LENGTH) },
       id: {
         allowNull: false,

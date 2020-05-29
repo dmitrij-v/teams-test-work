@@ -2,12 +2,11 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const cors = require('cors')
-const xss = require('xss-clean')
+const cors = require('cors');
+const xss = require('xss-clean');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const error = require('./middleware/error');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -18,8 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors())
-app.use(xss())
+app.use(cors());
+app.use(xss());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
