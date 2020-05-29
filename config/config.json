@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "djamware",
+    "password": "dj@mw@r3",
+    "database": "team_test_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "djamware",
+    "password": "dj@mw@r3",
+    "database": "team_test_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": "dj@mw@r3",
+    "database": "team_test_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
